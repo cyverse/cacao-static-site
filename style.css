@@ -55,6 +55,7 @@ img, picture {
     position: relative;
     flex: 0 0 auto;
 }
+
 .row {
     display: flex;
     align-items: flex-start;
@@ -273,4 +274,84 @@ img, picture {
     letter-spacing: 0;
     line-height: normal;
     text-decoration: underline;
+}
+.row-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.role-card {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 500px;
+    gap: 10px;
+    padding: 80px;
+    position: relative;
+    flex: 0 0 auto;
+    border-radius: 5px;
+}
+
+.card-title {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.text-wrapper-3 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Roboto-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.frame {
+    display: flex;
+    flex-direction: column;
+    width: 333.68px;
+    align-items: flex-start;
+    gap: 10px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.adobestock {
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    height: 333px;
+    object-fit: cover;
+}
+
+.frame-2 {
+    position: relative;
+    width: 335.68px;
+    flex: 0 0 auto;
+    background-image: url(./img/frame-11-2.png);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.frame-3 {
+    position: relative;
+    width: 320.68px;
+    flex: 0 0 auto;
+    background-image: url(./img/frame-11.png);
+    background-size: cover;
+    background-position: 50% 50%;
 }
