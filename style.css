@@ -87,7 +87,6 @@ table {
 .col-2 {
   flex: 1 1 calc(50% - 1rem);
   max-width: calc(50% - 1rem);
-  border-radius: 8px;
   overflow: hidden;
   position: relative;
   flex-direction: column;
