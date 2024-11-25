@@ -31,7 +31,7 @@ body {
   height: 100%;
 }
 
-/* Remove default styles */
+/* Removes default styles, as different browsers render CSS differently. This keeps things the same across the browsers */
 ul,
 ol {
   list-style: none;
