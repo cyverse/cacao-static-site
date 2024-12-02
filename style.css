@@ -410,7 +410,7 @@ img, picture {
     flex-direction: column;
     align-items: center;
     gap: 100px;
-    padding: 100px 50px;
+    padding: 10px 50px;
     align-self: stretch;
     width: 100%;
     flex: 0 0 auto;
@@ -491,8 +491,10 @@ img, picture {
 
 .img2 {
     position: relative;
-    width: 675.5px;
-    height: 355px;
+    bottom: 400px;
+    width: 680.5px;
+    height: 320px;
+    padding: 0px 50px;
     margin-top: -19.00px;
     margin-bottom: -19.00px;
 }
@@ -512,6 +514,7 @@ img, picture {
 .text-wrapper-8 {
     position: relative;
     width: 526px;
+    padding-bottom: 750px;
     margin-top: -1.00px;
     margin-left: -13.50px;
     margin-right: -13.50px;
@@ -532,6 +535,7 @@ img, picture {
 }
 .img3 {
     position: relative;
+    bottom: 350px;
     width: 675.5px;
     height: 355px;
     margin-top: -19.00px;
@@ -550,6 +554,7 @@ img, picture {
 
 .text-wrapper-9 {
     position: relative;
+    padding-bottom: 750px;
     width: 529px;
     margin-top: -1.00px;
     font-family: "Roboto-Regular", Helvetica;
