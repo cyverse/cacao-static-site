@@ -142,6 +142,14 @@ img, picture {
     border-radius: 15px;
     box-shadow: 0px 2px 2px #00000036;
 }
+.button:hover, .button-2:hover {
+    background-color: #bf4d00; 
+    transform: translateY(-2px); /* Slight "lift" effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0, 0.1); /* Add shadow for depth */
+}
+.button-2:hover {
+    background-color: #f3f1f0; 
+}
 
 .div {
     position: relative;
@@ -152,7 +160,7 @@ img, picture {
     font-family: "Roboto-Medium", Helvetica;
     font-weight: 500;
     color: #ffffff;
-    font-size: 16px;
+    font-size: 15 px;
     text-align: center;
     letter-spacing: 0;
     line-height: normal;
@@ -173,7 +181,7 @@ img, picture {
     margin-right: -6.00px;
     background-color: #ffffff;
     border-radius: 15px;
-    border: 1px solid;
+    border: 1.5px solid;
     border-color: #ee5d00;
 }
 
@@ -186,7 +194,7 @@ img, picture {
     font-family: "Roboto-Medium", Helvetica;
     font-weight: 500;
     color: #ee5e00;
-    font-size: 16px;
+    font-size: 15px;
     text-align: center;
     letter-spacing: 0;
     line-height: normal;
