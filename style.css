@@ -502,7 +502,7 @@ img, picture {
     position: relative;
     bottom: 400px;
     width: 680.5px;
-    height: 320px;
+    height: 340px;
     padding: 0px 50px;
     margin-top: -19.00px;
     margin-bottom: -19.00px;
@@ -1092,19 +1092,30 @@ img, picture {
     align-self: stretch;
     width: 100%;
     height: 206px;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .img-wrapper {
     display: flex;
     flex-direction: column;
-    width: 256px;
+    width: 180px;
     height: 206px;
     align-items: center;
     justify-content: center;
     gap: 10px;
     position: relative;
 }
+.img-wrapper1 {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 206px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+}
+
 
 .logo-3 {
     position: relative;
@@ -1114,7 +1125,7 @@ img, picture {
     margin-bottom: -4.00px;
     margin-left: -2.00px;
     margin-right: -2.00px;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .logo-4 {
@@ -1122,7 +1133,7 @@ img, picture {
     align-self: stretch;
     width: 100%;
     height: 170px;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .logo-5 {
@@ -1131,5 +1142,5 @@ img, picture {
     height: 206px;
     margin-left: -26.20px;
     margin-right: -26.20px;
-    object-fit: cover;
+    object-fit: contain;
 }
