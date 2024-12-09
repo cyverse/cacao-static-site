@@ -29,7 +29,7 @@ html {
 }
 
 body {
-    height: 100vh;
+    height: 100%;
     font-family: 'Inter', sans-serif;
     background: linear-gradient(180deg, #FFF 20%, #FFF3E5 100%);
     background-blend-mode: soft-light;
@@ -136,7 +136,7 @@ img, picture {
     gap: 10px;
     padding: 15px;
     position: relative;
-    right: 150px;
+    right: 130px;
     margin-left: -5.00px;
     background-color: #ee5d00;
     border-radius: 15px;
@@ -177,7 +177,7 @@ img, picture {
     gap: 10px;
     padding: 15px;
     position: relative;
-    right: 150px;
+    right: 130px;
     margin-right: -6.00px;
     background-color: #ffffff;
     border-radius: 15px;
@@ -200,7 +200,7 @@ img, picture {
     line-height: normal;
 }
 .right-col {
-    display: flex;
+    display:flex;
     flex-direction: column;
     width: 1500px;
     align-items: flex-end;
@@ -211,9 +211,9 @@ img, picture {
 
 .screenshot {
     position: relative;
-    bottom: 470px;
-    left: 100px;
-    width: 900px;
+    bottom: 500px;
+    left: 380px;
+    width: 950px;
     max-width: 100%;
     height: auto;
     margin-left: -100.00px;
@@ -367,8 +367,8 @@ img, picture {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 80px;
-    padding: 70px 50px;
+    gap: 20px;
+    padding: 100px 50px;
     width: 100%;
 }
 
@@ -440,13 +440,12 @@ img, picture {
     width: 600px;
     align-items: flex-start;
     gap: 20px;
-    padding: 0px 50px;
+    padding: 0px 38px;
     position: relative;
 }
 
 .div-wrapper-2 {
     display: flex;
-
     align-items: center;
     gap: 10px;
     position: relative;
@@ -499,11 +498,10 @@ img, picture {
 }
 
 .img2 {
-    position: relative;
+    position:relative;
     bottom: 400px;
-    width: 680.5px;
+    width: 570.5px;
     height: 340px;
-    padding: 0px 50px;
     margin-top: -19.00px;
     margin-bottom: -19.00px;
 }
@@ -546,7 +544,8 @@ img, picture {
     position: relative;
     bottom: 350px;
     width: 675.5px;
-    height: 355px;
+    right: -25px;
+    height: 350px;
     margin-top: -19.00px;
     margin-bottom: -19.00px;
 }
@@ -555,8 +554,9 @@ img, picture {
     flex-direction: column;
     width: 660px;
     align-items: flex-start;
+    right: -10px;
     gap: 20px;
-    padding: 0px 50px;
+    padding: 0px 65px;
     position: relative;
     margin-left: -15.00px;
 }
@@ -592,7 +592,7 @@ img, picture {
     flex: 0 0 auto;
 }
 
-.info-card {
+.Recipes-card {
     width: 422px;
     height: 382px;
     align-items: flex-start;
@@ -689,7 +689,7 @@ img, picture {
     letter-spacing: 0;
 }
 
-.frame-wrapper {
+.Workshop-card {
     width: 422px;
     height: 382px;
     align-items: flex-start;
@@ -769,7 +769,7 @@ img, picture {
     line-height: normal;
 }
 
-.info-card-2 {
+.Automation-card {
     width: 422px;
     height: 382px;
     align-items: flex-start;
@@ -818,7 +818,7 @@ img, picture {
 .track-your-resource-wrapper {
     display: flex;
     width: 316px;
-    height: 174px;
+    height: 200px;
     align-items: center;
     gap: 10px;
     padding: 10px 0px;
@@ -851,7 +851,7 @@ img, picture {
     flex: 0 0 auto;
 }
 
-.info-card-3 {
+.Cloud-card {
     width: 420px;
     height: 380px;
     align-items: center;
@@ -887,7 +887,7 @@ img, picture {
 
 .element-cloud-icon {
     position: relative;
-    width: 58.32px;
+    width: 65.32px;
     flex: 0 0 auto;
 }
 
@@ -916,7 +916,7 @@ img, picture {
 
 .frame-11 {
     display: flex;
-    width: 286.74px;
+    width: 240.74px;
     align-items: center;
     gap: 10px;
     padding: 10px 0px;
@@ -936,7 +936,7 @@ img, picture {
     line-height: normal;
 }
 
-.info-card-4 {
+.Collaborate-card {
     width: 422px;
     height: 382px;
     align-items: flex-start;
@@ -1006,7 +1006,7 @@ img, picture {
     line-height: normal;
 }
 
-.info-card-5 {
+.Open-card {
     width: 422px;
     height: 382px;
     align-items: flex-start;
@@ -1026,7 +1026,7 @@ img, picture {
 .frame-12 {
     display: inline-flex;
     flex-direction: column;
-    height: 305px;
+    height: 290px;
     align-items: flex-start;
     justify-content: center;
     position: relative;
@@ -1035,16 +1035,16 @@ img, picture {
 
 .logo {
    position: relative;
-    width: 58.32px;
+    width: 50.32px;
     flex: 0 0 auto;
 }
 
 .text-5 {
     display: flex;
-    width: 298.12px;
+    width: 290.12px;
     align-items: center;
     gap: 10px;
-    padding: 10px 0px;
+    padding: 5px 0px;
     position: relative;
     flex: 0 0 auto;
     margin-bottom: -7.00px;
@@ -1066,15 +1066,11 @@ img, picture {
 
 .footer {
     display: flex;
+    flex-wrap:wrap;
     align-items: flex-start;
     justify-content: center;
-    gap: 100px;
+    gap: 50px;
     padding: 50px;
-    position: relative;
-    align-self: stretch;
-    width: 100%;
-    flex: 0 0 auto;
-    background-color: transparent;
 }
 
 .logo-wrapper {
