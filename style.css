@@ -41,11 +41,9 @@ ol {
 
 .info-panel-title {
     position: relative;
-    width: 528px;
     margin-top: -1.00px;
     margin-right: -30.00px;
     font-family: "Roboto-SemiBold", Helvetica;
-    font-weight: 600;
     color: #212121;
     font-size: 50px;
     letter-spacing: 0;
@@ -54,13 +52,10 @@ ol {
 
 .info-panel-subtitle {
     position: relative;
-    width: 420px;
     margin-top: 2rem;
     font-family: "Roboto-Regular", Helvetica;
-    font-weight: 400;
     color: #212121;
     font-size: 32px;
-    letter-spacing: 0;
     line-height: normal;
 }
 
@@ -144,6 +139,7 @@ table {
 .left-align {
   text-align: left;
   align-content: center;
+  line-height: normal;
 }
 
 .right-align {
@@ -212,7 +208,7 @@ table {
   color: #FFF;
   padding: 0.5rem 1rem;
   border-radius: 5px;
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 500;
   margin-right: 1rem;
   transition: background-color 0.3s;
@@ -225,7 +221,7 @@ table {
 }
 
 .btn-secondary {
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 500;
   background-color: #FFF;
   border: 1px solid #EF5E00;
@@ -281,7 +277,7 @@ table {
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
   padding: 2rem;
-  max-width: 1600px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -321,6 +317,7 @@ table {
   font-family: Inter;
   font-size: 24px;
   font-weight: 400;
+  min-height: 220px;
 }
 
 .footer {
