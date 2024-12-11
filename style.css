@@ -8,12 +8,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* comment out red border for production */
   border: 1px solid red;
 }
 
 /* Base Styles */
 html {
-  font-size: 100%; /* 16px default */
+  font-size: 100%;
+  /* 16px default */
   line-height: 1.5;
   scroll-behavior: smooth;
 }
@@ -31,7 +33,7 @@ body {
   height: 100%;
 }
 
-/* Removes default styles, as different browsers render CSS differently. This keeps things the same across the browsers */
+/* Removes default styles on what are considered global elements, as different browsers render CSS differently. This keeps elements the same across the browsers so that your custom css applies consistently */
 ul,
 ol {
   list-style: none;
@@ -165,11 +167,12 @@ table {
   font-size: 1.2rem;
   font-weight: 400;
   margin: 1rem;
+  padding: 5px 15px 5px 15px;
+  border-radius: 3px;
 }
 
 .navBtn:hover {
-  font-weight: 600;
-  text-decoration: underline;
+  background-color: #fff6ee;
 }
 
 /* Buttons */
@@ -193,6 +196,8 @@ table {
 
 .btn-primary:hover {
   background-color: #FF7A00;
+  transform: scale(1.01);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .btn-secondary {
@@ -208,6 +213,8 @@ table {
 
 .btn-secondary:hover {
   background-color: #FFF3E5;
+  transform: scale(1.01);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* 3 Col Container */
@@ -267,7 +274,7 @@ table {
 }
 
 .card:hover {
-  transform: scale(1.05);
+  transform: scale(1.01);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
@@ -305,8 +312,10 @@ table {
     max-width: 100%;
     padding: 2rem;
   }
+
   .card-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columns for medium screens */
   }
 }
 
@@ -319,7 +328,9 @@ table {
   .hidden-md {
     display: none;
   }
+
   .card-grid {
-    grid-template-columns: 1fr; /* 1 column for small screens */
+    grid-template-columns: 1fr;
+    /* 1 column for small screens */
   }
 }
