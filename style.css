@@ -9,7 +9,7 @@
   padding: 0;
   box-sizing: border-box;
   /* comment out red border for production */
-   border: 1px solid red 
+  /* border: 1px solid red */
   }
 
 /* Base Styles */
