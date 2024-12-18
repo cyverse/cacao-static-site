@@ -117,8 +117,8 @@ table {
 }
 
 .col-2 {
-  flex: 1 1 calc(20% - 1rem);
-  max-width: calc(80% - 1rem);
+  flex: 1 1 calc(50% - 1rem);
+  max-width: calc(50% - 1rem);
   position: relative;
   flex-direction: column;
 }
@@ -147,7 +147,7 @@ table {
 
 .left-align {
   text-align: left;
-  padding: 0rem 6rem 6rem;
+  padding: 0rem 6rem 1rem;
   align-content:center;
   line-height: normal;
 }
