@@ -9,7 +9,7 @@
   padding: 0;
   box-sizing: border-box;
   /* comment out red border for production */
-  /* border: 1px solid red */
+   border: 1px solid red 
   }
 
 /* Base Styles */
@@ -117,8 +117,8 @@ table {
 }
 
 .col-2 {
-  flex: 1 1 calc(50% - 1rem);
-  max-width: calc(50% - 1rem);
+  flex: 1 1 calc(20% - 1rem);
+  max-width: calc(80% - 1rem);
   position: relative;
   flex-direction: column;
 }
