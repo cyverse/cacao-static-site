@@ -58,7 +58,6 @@ ol {
 .question-title {
 font-family: "Roboto-ExtraBold", Helvetica;
 font-weight: 800;
-text-align: center;
 color: #6e5547;
 font-size: 80px;
 }
@@ -148,11 +147,13 @@ table {
 
 .left-align {
   text-align: left;
-  align-content: center;
+  padding: 0rem 8rem 8rem;
+  align-content:center;
   line-height: normal;
 }
 
 .right-align {
+  padding: 0rem 0rem 0rem;
   text-align: right;
   align-content: flex-start;
 }
@@ -165,7 +166,6 @@ table {
   padding: 0;
   background-color: #FFF;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  position: fixed;
   width: 100%;
   height: auto;
   z-index: 1000;
@@ -182,7 +182,7 @@ table {
 }
 
 .cacaoLogo {
-  width: 200px;
+  width: 150px;
   height: auto;
 }
 
@@ -210,13 +210,13 @@ table {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 .btn-primary {
   background-color: #EF5E00;
   color: #FFF;
-  padding: 0.5rem 1rem;
+  padding: 0.9rem 1rem;
   border-radius: 5px;
   font-size: 1.3rem;
   font-weight: 500;
@@ -237,7 +237,7 @@ table {
   border: 1px solid #EF5E00;
   color: #EF5E00;
   border-radius: 5px;
-  padding: 0.5rem;
+  padding: 0.9rem;
   transition: background-color 0.3s;
 }
 
@@ -251,9 +251,8 @@ table {
 .col-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   gap: 1.5rem;
-  padding: 8rem;
+  padding: 4rem;
 }
 
 /* Col-3 Styling */
@@ -262,7 +261,6 @@ table {
   max-width: calc(33.333% - 1rem);
   border-radius: 8px;
   text-align: center;
-  overflow: hidden;
   padding: 2rem;
 }
 
@@ -282,10 +280,10 @@ table {
 }
 
 .col-3-center {
-  border-radius: 8px;
+  display:flexbox;
   text-align: center;
   overflow: hidden;
-  padding: 5rem 10rem 5rem
+  padding: 8%;
 }
 
 /* 4 Card Grid */
