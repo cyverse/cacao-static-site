@@ -1,63 +1,432 @@
 /* Importing Inter font from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
 
-/* CSS Reset */
+/* Global Reset */
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* comment out red border for production */
+  /* border: 1px solid red */
+  }
 
-/* Remove default list styles */
-ul, ol {
-    list-style: none;
-}
-
-/* Remove default link styles */
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-/* Set a base font and line height */
+/* Base Styles */
 html {
-    font-size: 100%; /* 16px by default */
-    line-height: 1.5;
-    scroll-behavior: smooth;
+  font-size: 100%;
+  /* 16px default */
+  line-height: 1.5;
+  scroll-behavior: smooth;
 }
 
 body {
-  height: 100vh;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", Helvetica;
+  color: #333;
   background: linear-gradient(180deg, #FFF 20%, #FFF3E5 100%);
   background-blend-mode: soft-light;
-  color: #333;
-  padding: 20px;
+  background-size: cover;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-size: cover;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
-
-/* Set a consistent border and outline style */
-img, picture {
-    max-width: 100%;
-    display: block;
+/* Removes default styles on what are considered global elements, as different browsers render CSS differently. This keeps elements the same across the browsers so that your custom css applies consistently */
+ul,
+ol {
+  list-style: none;
 }
 
-input, button, textarea, select {
-    font: inherit;
-    border: none;
-    outline: none;
+.info-panel-title {
+    position: relative;
+    font-family: "Roboto-SemiBold", Helvetica;
+    color: #212121;
+    font-size: 55px;
+    line-height: normal;
+    max-width: 800px;
+}
+
+.info-panel-subtitle {
+    position: relative;
+    margin-top: 1rem;
+    font-family: "Roboto-Regular", Helvetica;
+    color: #212121;
+    font-size: 30px;
+    line-height: normal;
+    max-width: 800px;
+}
+.question-title {
+font-family: "Roboto-ExtraBold", Helvetica;
+font-weight: 800;
+color: #6e5547;
+font-size: 80px;
+line-height: normal;
+}
+.text {
+  position: relative;
+  margin-top: 1rem;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #212121;
+  font-size: 30px;
+  line-height: normal;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  border: none;
+  outline: none;
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Layout */
+.container {
+  margin: 0 auto;
+  max-width: 1600px;
+  display: block;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col-2 {
+  flex: 1 1 calc(20% - 1rem);
+  max-width: calc(80% - 1rem);
+  position: relative;
+  flex-direction: column;
+}
+
+.col-2 h1 {
+  color: #6E5547;
+  font-family: Inter, sans-serif;
+  font-size: 100px;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  line-height: normal;
+}
+
+.col-2 p {
+  color: #212121;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.col-2 img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  object-fit: cover;
+}
+
+.left-align {
+  text-align: left;
+  padding: 0rem 6rem 1rem;
+  align-content:center;
+  line-height: normal;
+}
+
+.right-align {
+  text-align: right;
+  align-content: flex-start;
+}
+
+/* Outer Navigation for Full Width */
+.nav {
+  position: sticky;
+    top: 0; /* Ensures it sticks when it reaches the top */
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 10; /* Ensures it stays above other elements */
+}
+
+/* Inner Navigation Container to match the max width of 1600 in the container */
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 2000px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.cacaoLogo {
+  width: 160px;
+  height: auto;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+}
+
+.navBtn {
+  color: #EF5E00;
+  font-family: Inter, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 0.5rem;
+  padding: 5px 15px 5px 15px;
+  border-radius: 3px;
+}
+
+.navBtn:hover {
+  background-color: #fff6ee;
+}
+
+/* Buttons */
+.btnGroup {
+  display:flex;
+  justify-content: flex-start;
+  align-items:center;
+  margin-top: 1.5rem;
+}
+
+.btn-primary {
+  background-color: #EF5E00;
+  color: #FFF;
+  padding: 0.9rem 1rem;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-right: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #FF7A00;
+  transform-origin: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-secondary {
+  font-size: 1.3rem;
+  font-weight: 500;
+  background-color: #FFF;
+  border: 1px solid #EF5E00;
+  border-radius: 5px;
+  padding: 0.9rem 1rem;
+  margin-right: 5rem;
+  color: #EF5E00;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #FFF3E5;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* 3 Col Container */
+.col-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4.5rem;
+  padding: 4%;
+}
+
+/* Col-3 Styling */
+.col-3 {
+  flex: 1 1 calc(33.333% - 1rem);
+  max-width: calc(31% - 1rem);
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+.col-3-image {
+  display: block;
+  margin: 0 auto;
+}
+
+.col-3-title {
+  color: #6E5547;
+  font-family: Inter;
+  font-size: 2.5em;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.col-3-center {
+  display:flexbox;
+  text-align: center;
+  overflow: hidden;
+  padding: 6%;
+}
+
+/* 4 Card Grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Card Styling */
+.card {
+  background-color: #FFF;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 2rem;
+}
+
+.card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-image {
+  width: 100%;
+  max-width: 60px;
+  height: auto;
+  display: block;
+  /* margin: 0 auto; */
+}
+
+.card-title {
+  color: #303030;
+  font-family: "Roboto-Regular", Helvetica;
+  font-size: 32px;
+  font-weight: 600;
+  margin: 1rem 0;
+  line-height: normal;
+}
+
+.card-subtitle {
+  color: #212121;
+  font-family: "Roboto-Regular", Helvetica;
+  font-size: 24px;
+  font-weight: 400;
+  min-height: 200px;
+  line-height: normal;
+}
+
+.footer {
+    display: flex;
+    flex-wrap:wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+}
+
+.cyverse-logo-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 256px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.jetstream2-logo-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  
+}
+
+.aiira-logo-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.cyverse-logo {
+    align-self: stretch;
+    width: 100%;
+    object-fit: contain;
+}
+
+.jetstream2-logo {
+    width: 260px;
+    margin-top: -4.00px;
+    margin-bottom: -4.00px;
+    margin-left: -2.00px;
+    margin-right: -2.00px;
+    object-fit: contain;
+}
+
+.aiira-logo {
+    align-self: stretch;
+    width: 100%;
+    height: 170px;
+    object-fit: contain;
+}
+
+.coalesce-logo {
+    width: 308.4px;
+    margin-left: -26.20px;
+    margin-right: -26.20px;
+    object-fit: contain;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+  .hidden-lg {
+    display: none;
+  }
+
+  .col-2 {
+    flex: 1 1 100%;
+    max-width: 100%;
+    padding: 2rem;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columns for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .col-3 {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .hidden-md {
+    display: none;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+    /* 1 column for small screens */
+  }
 }
